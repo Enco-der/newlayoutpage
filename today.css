@@ -159,6 +159,7 @@ background: transparent;
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+   
 }                                
 
 .leftside{
@@ -166,6 +167,7 @@ max-width: 565px;
 max-height: 360px;
 flex: 1;
 box-sizing: border-box;
+border: 1px solid blue;
 
 }
 
@@ -239,10 +241,14 @@ margin-left: 10px;
 @media (max-width:550px) {
     .leftside{
         margin: auto;
+        max-width: 100%;
     }
     .right{
         max-width: 100%;
         height: auto;
+    }
+    .sir{
+        margin: auto;
     }
 }
 
