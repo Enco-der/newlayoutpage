@@ -7,6 +7,7 @@
 .fluid-container{
     margin: auto;
     max-width: 1380px;
+    border: 1px solid black;
 }
 .herosection{
     max-width: 1380px;
@@ -156,15 +157,18 @@ background: transparent;
     gap: 15px;
     padding: 30px 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 50px;
 }                                
 
 .leftside{
 max-width: 565px;
 max-height: 360px;
+flex: 1;
+box-sizing: border-box;
 
 }
+
 
 .leftside .heading2{
 font-family: Poppins;
@@ -175,7 +179,8 @@ line-height: 57.2px;
 color: rgba(152, 0, 46, 1);
 font-size: 43px;
 text-align: center;
-margin-top: 80px;
+margin-top: 93px;
+margin-left: 10px;
 }
 
 
@@ -189,6 +194,8 @@ line-height: 33.6px;
 color: rgba(69, 69, 69, 1);
 color: var(--text-01-body, #454545);
 text-align: center;
+margin-left: 10px;
+
 }
 
 
@@ -196,9 +203,15 @@ text-align: center;
 .rightside{
     max-width: 565px;
     max-height: 360px;
+    flex: 1;
+    box-sizing: border-box;
+}
 
-    
-
+.complexpicture{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -241,23 +254,38 @@ text-align: center;
 
 .third{
     display: flex;
-     gap: 20px;
+     /* gap: 20px; */
+     gap: 15px;
+     justify-content: space-around;
      margin-top: 50px;
    
 }
 
-.anothercomplexpicture{
-margin-left: 60px;
+   .anothercomplexpicture{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   
+     }
+
+.leftside3{
+    max-width: 565px;
+    max-height: 360px;
+    flex: 1;
+    box-sizing: border-box;
 }
 
-
-
-
 .rightside3{
-    
-   text-align: center;
-   justify-content: center;
-   align-items: center;
+   /* text-align: center;
+   justify-content: center; */
+   max-width: 565px;
+   max-height: 360px;
+   flex: 1;
+   box-sizing: border-box;
+ 
+
+ 
    
    
 }
@@ -273,16 +301,16 @@ font-weight: 500;
 line-height: 28.8px;
 text-align: center;
 align-items: center;
-display: flex;
+/* display: flex; */
 justify-content: center;
-margin-top: 150px;
+margin-top: 80px;
 
 }
 
 
 .rightside3 .anothertext{
-margin-top: 25px;
-color: var(--text-01-body, #454545);
+margin-top: 20px;
+color: rgba(69, 69, 69, 1);
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
@@ -293,22 +321,61 @@ line-height: 27px;
 
 
 
+@media (max-width:950px) {
+    .third{
+        flex-direction: column;
+    }
+
+    .anothercomplexpicture{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .leftside3{
+        margin: auto;
+        width: 100%;
+    }
+    .rightside3{
+        width: 100%;
+        margin: auto;
+    }
+
+
+}
+
+
+@media (max-width:560px) {
+    .anothertext{
+       text-align: center;
+    }
+}
+
 
                                          /* fourth section  */
 
 .fourth{
     margin-top: 90px;
     display: flex;
-    gap: 47px;
+    justify-content: space-around;
     
+}
+
+.anotherchallenge{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
 }
 
 
 .leftside4{
- 
    max-width: 565px;
    max-height: 360px;
-   margin-left: 60px;
+   /* margin-left: 60px; */
+  
    
    
 }
@@ -339,18 +406,50 @@ line-height: 27px;
 
 
 
+@media (max-width:950px) {
+    .fourth{
+        flex-direction: column;
+    }
+    .leftside4{
+        width: 100%;
+        margin: auto;
+    }
+    .leftside4{
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .anotherchallenge{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width:560px) {
+      .leftside4{
+        max-width: 100%;
+      }
+}
+
+
+
 
                                       /* fifth section */
         
 .fifth{
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
+    justify-content: space-around;
     margin-top: 90px;
+
     
 }
 
 .roads{
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 .againheading4{
 color: var(--theme-logo-red, #98002E);
@@ -423,40 +522,61 @@ line-height: 27px;
 
 .seventh{
     display: flex;
-    /* justify-content: space-around; */
-    justify-content: center;
-    gap: 85px;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+    
 }
 
 .seventhleft{
+   max-width: 533px;
+   max-height: 505px;
    
 
 }
 
 .seventhright{
+   max-width: 533px;
+   max-height: 505px;
+   
    
 }
 
-.seventhheading{
-    display: flex;
-    padding: 30px 15px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-    align-self: stretch;
-    color: rgba(152, 0, 46, 1);
-
-}
-
-/* .abdull{
+span{
 color: var(--theme-logo-red, #98002E);
 font-family: Poppins;
 font-size: 26px;
 font-style: normal;
 font-weight: 700;
 line-height: 28.8px;
-} */
+margin-top: 23px;
+
+
+}
+
+.newerror{
+    display: flex;
+}
+
+
+
+
+.seventhheading{
+    display: flex;
+    padding: 30px 15px;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
+    margin-left: 95px;
+    gap: 15px;
+    align-self: stretch;
+    color: rgba(152, 0, 46, 1);
+
+}
+.newone{
+    margin-left: 140px;
+}
+
 
 .me{
 color: var(--text-01-body, #454545);
@@ -476,5 +596,300 @@ margin-top: 20px;
     margin-top: 45px;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+  
+    
+}
+
+.frame{
+    width: 88%;
+}
+
+
+
+
+
+                                    /*nine phase starts   */
+
+.nine{
+    margin-top: 49px;
+     width: 100%;
+    height: 350px;
+    padding: 0px 60px 0px 60px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+.blocks{
+  
+    width: 220px;
+    height: 350px;
+}
+
+
+.different{
+color: var(--theme-logo-red, #98002E);
+
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 67.2px; 
+}
+
+.margin{
+    margin-top: 13px;
+
+}
+.basiclis{
+color: var(--text-01-body, #454545);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             /* phase 10 */
+
+
+.seven {
+    margin-top: 80px;
+    width: 100%;
+    height: 266px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
     align-items: center;
+
+
+}
+
+.gas {
+
+    max-width: 50%;
+
+ }
+
+ .khay {
+
+     max-width: 50%;
+     margin-left: 10vw;
+
+ }
+
+
+ .date {
+
+color: var(--global-02-secondary, #6C757D);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-left: 42px;
+
+}
+
+.quote {
+color: var(--text-01-body, #454545);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+color: rgba(69, 69, 69, 1);
+}
+
+
+.text {
+display: flex;
+width: 400px;
+height: 100px;
+padding: 15px;
+align-items: flex-start;
+border-radius: 8px;
+background: #FFF;
+border: none;
+}
+
+::placeholder{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 19;
+}
+
+.btn button {
+    width: 160px;
+    height: 36px;
+    border-radius: 50px;
+    padding: 6px, 12px, 6px, 12px;
+    margin-top: 10px;
+    margin-left: 240px;
+    border: 1px solid #343A40;
+}
+
+.relation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alwaysright{
+    margin-left: 4vw;
+}
+
+.text{
+    resize: none;
+}
+
+.jessa{
+color: var(--theme-logo-red, #98002E);
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-left: 260px;
+}
+
+
+
+
+                                  /* phase 11 */
+
+
+.eleven{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+
+
+
+
+                                 /* twelth */
+
+.twelth{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+                                  /* phase thirteen */
+
+ .thisra{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+}
+
+.abu h3{
+color: var(--text-01-body, #454545);
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+color: rgba(69, 69, 69, 1);
+}
+
+.abu p{
+color: var(--theme-logo-red, #98002E);
+text-align: center;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1px;
+} 
+
+
+.aizaz h3{
+color: var(--text-01-body, #454545);
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+text-decoration-line: underline;
+}
+
+.linkslogo{
+    display: flex;
+    margin-top: 20px;
+    gap: 36px;
+}
+
+                        
+
+
+
+
+
+
+                               /* phase fourteen */
+
+
+.chotha{
+    margin-top: 30px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.ugly{
+    display: flex;
+    gap: 25px;
+    margin-left: 8vw;
+}
+
+.ugly h3{
+color: var(--text-01-body, #454545);
+font-family: Poppins;
+font-size: 12.8px;
+font-style: normal;
+font-weight: 400;
+line-height: 19.2px;
+color: (69, 69, 69, 1);
+} 
+
+
+.beauty p{
+color: var(--text-01-body, #454545);
+font-family: Poppins;
+font-size: 12.8px;
+font-style: normal;
+font-weight: 400;
+line-height: 19.2px;
+color: (69, 69, 69, 1);
 }
