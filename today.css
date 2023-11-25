@@ -861,10 +861,10 @@ text-decoration-line: underline;
 
 .chotha{
     margin-top: 30px;
-    border: 1px solid blue;
+    
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    height: 100px;
 }
 
 .ugly{
